@@ -1,16 +1,288 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="./src/output.css" rel="stylesheet">
-      <meta property="og:title" content="My Awesome Page">
-      <meta property="og:type" content="website">
-      <meta property="og:url" content="https://www.example.com/my-awesome-page">
-      <meta property="og:description" content="Check out this awesome content!">
-      <title>Cassy</title>
-</head>
-<body>
-      <h1>This is a about page</h1>
-</body>
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Cassy Store | About Us</title>
+  </head>
+
+  <body class="bg-[#F7F6F2] text-[#1A1A1A] font-sans min-h-screen">
+    <!-- Header -->
+    <header>
+      <nav class="bg-white fixed top-0 z-20 w-full border-b border-gray-200">
+        <div
+          class="mx-10 flex max-w-8xl flex-wrap items-center justify-between p-4"
+        >
+          <a href="#" class="flex items-center space-x-3">
+            <img
+              class="h-20 w-20 object-contain"
+              src="./public/assets/img/logo-classic-removebg-preview.png"
+              alt="Logo"
+            />
+          </a>
+
+          <div class="hidden md:order-1 md:flex">
+            <ul class="flex space-x-20 font-medium">
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Products
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  About us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex gap-3 md:order-2">
+            <button class="text-gray-500 transition hover:text-primary-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                />
+              </svg>
+            </button>
+
+            <button
+              class="rounded-xl border border-gray-400 px-6 py-2 text-lg text-black transition hover:border-primary-500 hover:text-primary-500"
+            >
+              Sign in
+            </button>
+
+            <button
+              class="rounded-xl bg-primary-500 px-6 py-2 text-lg text-white transition hover:bg-primary-600"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main-content -->
+    <main class="pt-24 my-100">
+      <h1 class="text-4xl font-bold text-center">Welcome to Cassy Store</h1>
+    </main>
+
+    <!-- footer-content -->
+    <footer class="bg-[#efede3] text-[#8f8a80]">
+      <div class="mx-auto max-w-8xl px-6 pt-16 md:px-12 lg:px-16">
+        <div
+          class="flex flex-col justify-between gap-12 md:flex-row md:gap-24 lg:gap-32"
+        >
+          <div>
+            <img
+              src="./public/assets/img/logo-classic-removebg-preview.png"
+              alt="Cassy Outfit Logo"
+              class="max-w-50"
+            />
+
+            <p class="max-w-md text-lg leading-9 text-[#8f8a80]">
+              Start your day with the beautiful of clothes and shoes. Now you
+              will get more energy and it’s really important benefits in your
+              life because if you try to make yourself happy do not forget about
+              life style.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="mb-5 mt-10 text-xl font-bold text-black">Quick link</h3>
+            <ul class="space-y-4 text-lg">
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Support</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="mb-5 mt-10 text-xl font-bold text-black">Products</h3>
+            <ul class="space-y-4 text-lg">
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >T-shirt</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Pants</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Jackets</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Shoes</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-10">
+            <div>
+              <h3 class="mb-5 mt-10 text-xl font-bold text-black">Service</h3>
+              <ul class="space-y-4 text-lg">
+                <li>
+                  <a href="#" class="transition-colors hover:text-primary-500"
+                    >Care</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="transition-colors hover:text-primary-500"
+                    >Ship</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="transition-colors hover:text-primary-500"
+                    >Help</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="transition-colors hover:text-primary-500"
+                    >Save</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="mb-5 mt-10 text-xl font-bold text-black">Newsletter</h3>
+            <p class="mb-5 max-w-55 text-lg leading-8">
+              Subscribe to receive future updates
+            </p>
+
+            <form class="relative max-w-65">
+              <input
+                type="email"
+                placeholder="Email address"
+                class="h-12 w-full rounded-full border border-[#cfc4a8] bg-transparent pl-5 pr-14 text-[16px] outline-none placeholder:text-[#a5a199] focus:border-primary-500"
+              />
+              <button
+                type="submit"
+                class="absolute top-1/2 right-4 -translate-y-1/2 text-[#9a978f] transition-colors hover:text-primary-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 fill-current"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1.29 13.29a1 1 0 001.41 1.42l3-3a1 1 0 000-1.42l-3-3a1 1 0 10-1.41 1.42L12.59 11H8a1 1 0 100 2h4.59l-1.88 1.29z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 flex flex-col items-center justify-between gap-6 border-t border-[#cfc4a8] pt-8 md:flex-row"
+        >
+          <p class="text-center text-[18px] text-[#aa9e7c] md:text-left">
+            © 2026 Base. All rights reserved. Distributed by Cassy Store.
+          </p>
+
+          <div class="flex items-center mb-10 gap-5 text-[#b3a57f]">
+            <a href="#" class="transition-colors hover:text-primary-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0022 12z"
+                />
+              </svg>
+            </a>
+
+            <a href="#" class="transition-colors hover:text-primary-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.15 2 11.27c0 2.92 1.46 5.52 3.74 7.22V22l3.19-1.75c.98.27 2 .42 3.07.42 5.52 0 10-4.15 10-9.27S17.52 2 12 2zm1.03 12.44-2.54-2.71-4.95 2.71 5.45-5.78 2.58 2.71 4.9-2.71-5.44 5.78z"
+                />
+              </svg>
+            </a>
+
+            <a href="#" class="transition-colors hover:text-primary-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21.94 4.66a1.5 1.5 0 00-1.63-.24L3.4 11.35a1.5 1.5 0 00.08 2.8l4.2 1.54 1.54 4.2a1.5 1.5 0 002.8.08l6.93-16.9a1.5 1.5 0 00-.01-1.41zM9.5 15.2l-.9 2.45-.9-2.45 6.98-6.98-5.18 7z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

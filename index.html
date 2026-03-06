@@ -1,447 +1,288 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./src/output.css">
-  <title>Cassy Store</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Cassy Store</title>
+  </head>
 
-<body class="bg-[#F7F6F2] text-[#1A1A1A] font-primary">
-  <!-- navbar -->
-  <header class="bg-white/80 backdrop-blur border-b border-black/10 sticky top-0">
-    <div class="mx-auto max-w-7xl px-4">
-      <div class="flex items-center justify-between py-1">
-
-        <a href="#" class="flex items-center gap-2">
-          <img src="./public/assets/img/logo-classic-removebg-preview.png" alt="Cassy" class="w-20" />
-        </a>
-
-        <nav class="hidden md:flex font-primary items-center gap-10 text-lg font-medium">
-          <a class="hover:opacity-70" href="#">Home</a>
-          <a class="hover:opacity-70" href="#">Products</a>
-          <a class="hover:opacity-70" href="#">About Us</a>
-          <a class="hover:opacity-70" href="#">Support</a>
-        </nav>
-
-        <div class="flex items-center gap-2">
-          <button class="h-9 w-9 rounded-full border border-black/10 grid place-items-center hover:bg-black/5">
-            O
-          </button>
-
-          <a href="#" class="hidden sm:inline-flex h-9 items-center rounded-full border border-black/20 px-4 text-sm hover:bg-black/5">
-            Sign In
-          </a>
-
-          <a href="#" class="hidden sm:inline-flex h-9 items-center rounded-full border border-black/20 px-4 text-sm hover:bg-black/5">
-            Sign Up
-          </a>
-
-
-          <button class="md:hidden h-9 w-9 rounded-full border border-black/10 grid place-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-5 w-5">
-              <path d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="bg-[#B7AD93] ">
-    <div class="mx-auto max-w-7xl px-4">
-      <div class="grid md:grid-cols-2 gap-10 items-center py-14 md:py-16">
-        <!-- Left -->
-        <div class="text-white">
-          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-            Discover Amazing
-            <span class="block mt-2 text-2xl md:text-3xl font-bold opacity-95">
-              Products at Great Prices
-            </span>
-          </h1>
-
-          <p class="mt-6 text-sm md:text-base text-white/90 max-w-md">
-            Shop from thousands of products across multiple categories.
-            Quality guaranteed, fast shipping, and unbeatable prices.
-          </p>
-
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#" class="inline-flex items-center justify-center h-10 px-6 rounded-full bg-white text-black text-sm hover:bg-white/90">
-              Shop Now
-            </a>
-            <a href="#" class="inline-flex items-center justify-center h-10 px-6 rounded-full border border-white/70 text-white text-sm hover:bg-white/10">
-              Browse Categories
-            </a>
-          </div>
-        </div>
-
-        <!-- Right (image) -->
-        <div class="relative">
-          <div class="rounded-3xl overflow-hidden shadow-sm">
+  <body class="bg-[#F7F6F2] text-[#1A1A1A] font-sans min-h-screen">
+    <!-- Header -->
+    <header>
+      <nav class="bg-white fixed top-0 z-20 w-full border-b border-gray-200">
+        <div
+          class="mx-10 flex max-w-8xl flex-wrap items-center justify-between p-4"
+        >
+          <a href="#" class="flex items-center space-x-3">
             <img
-              src="assets/hero-clothes.jpg"
-              alt="Hero"
-              class="w-full h-65 md:h-80 object-cover"
+              class="h-20 w-20 object-contain"
+              src="./public/assets/img/logo-classic-removebg-preview.png"
+              alt="Logo"
             />
+          </a>
+
+          <div class="hidden md:order-1 md:flex">
+            <ul class="flex space-x-20 font-medium">
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Products
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  About us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Support
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- BEST SELLER -->
-  <section class="py-12">
-    <div class="mx-auto max-w-7xl px-4">
-      <div class="flex items-center justify-between mb-6">
-        <h2 class="text-2xl font-extrabold">Best Seller</h2>
-        <a href="#" class="text-sm font-semibold hover:opacity-70">See more</a>
-      </div>
-
-      <!-- Grid -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- CARD -->
-        <article class="bg-white rounded-2xl border border-black/10 p-4">
-          <div class="rounded-xl bg-[#EFEFEF] overflow-hidden">
-            <img src="assets/p1.jpg" alt="Jean" class="w-full h-56 object-contain p-4" />
-          </div>
-          <div class="mt-4">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="font-bold">Jean</h3>
-              <span class="text-sm font-bold text-red-500">$ 12.99</span>
-            </div>
-            <p class="mt-1 text-xs text-black/55">
-              originally designed for rugged work but now a global symbol of casual style.
-            </p>
-
-            <div class="mt-3 flex items-center justify-between">
-              <div class="flex items-center gap-1">
-                <!-- stars -->
-                <span class="text-[#F5A623]">★ ★ ★ ★ ★</span>
-              </div>
-
-              <button class="w-full ml-3 h-10 rounded-xl bg-primary text-white text-sm font-semibold hover:brightness-95 flex items-center justify-center gap-2">
-                Add to Cart
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-4 w-4">
-                  <path d="M6 6h15l-1.5 9h-12z"/>
-                  <path d="M6 6l-2-2"/>
-                  <path d="M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <article class="bg-white rounded-2xl border border-black/10 p-4">
-          <div class="rounded-xl bg-[#EFEFEF] overflow-hidden">
-            <img src="assets/p2.jpg" alt="Skirt" class="w-full h-56 object-contain p-4" />
-          </div>
-          <div class="mt-4">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="font-bold">Skirt</h3>
-              <span class="text-sm font-bold text-red-500">$ 16.99</span>
-            </div>
-            <p class="mt-1 text-xs text-black/55">
-              originally designed for rugged work but now a global symbol of casual style.
-            </p>
-
-            <div class="mt-3 flex items-center justify-between">
-              <span class="text-[#F5A623]">★ ★ ★ ★ ☆</span>
-
-              <button class="w-full ml-3 h-10 rounded-xl bg-primary text-white text-sm font-semibold hover:brightness-95 flex items-center justify-center gap-2">
-                Add to Cart
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-4 w-4">
-                  <path d="M6 6h15l-1.5 9h-12z"/>
-                  <path d="M6 6l-2-2"/>
-                  <path d="M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <article class="bg-white rounded-2xl border border-black/10 p-4">
-          <div class="rounded-xl bg-[#EFEFEF] overflow-hidden">
-            <img src="assets/p3.jpg" alt="Jacket Knitted" class="w-full h-56 object-contain p-4" />
-          </div>
-          <div class="mt-4">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="font-bold">Jacket Knitted</h3>
-              <span class="text-sm font-bold text-red-500">$ 34.00</span>
-            </div>
-            <p class="mt-1 text-xs text-black/55">
-              originally designed for rugged work but now a global symbol of casual style.
-            </p>
-
-            <div class="mt-3 flex items-center justify-between">
-              <span class="text-[#F5A623]">★ ★ ★ ★ ★</span>
-
-              <button class="w-full ml-3 h-10 rounded-xl bg-primary text-white text-sm font-semibold hover:brightness-95 flex items-center justify-center gap-2">
-                Add to Cart
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-4 w-4">
-                  <path d="M6 6h15l-1.5 9h-12z"/>
-                  <path d="M6 6l-2-2"/>
-                  <path d="M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <!-- Row 2 -->
-        <article class="bg-white rounded-2xl border border-black/10 p-4">
-          <div class="rounded-xl bg-[#EFEFEF] overflow-hidden">
-            <img src="assets/p4.jpg" alt="Jean" class="w-full h-56 object-contain p-4" />
-          </div>
-          <div class="mt-4">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="font-bold">Jean</h3>
-              <span class="text-sm font-bold text-red-500">$ 6.99</span>
-            </div>
-            <p class="mt-1 text-xs text-black/55">
-              originally designed for rugged work but now a global symbol of casual style.
-            </p>
-
-            <div class="mt-3 flex items-center justify-between">
-              <span class="text-[#F5A623]">★ ★ ★ ★ ★</span>
-              <button class="w-full ml-3 h-10 rounded-xl bg-primary text-white text-sm font-semibold hover:brightness-95 flex items-center justify-center gap-2">
-                Add to Cart
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-4 w-4">
-                  <path d="M6 6h15l-1.5 9h-12z"/>
-                  <path d="M6 6l-2-2"/>
-                  <path d="M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <article class="bg-white rounded-2xl border border-black/10 p-4">
-          <div class="rounded-xl bg-[#EFEFEF] overflow-hidden">
-            <img src="assets/p5.jpg" alt="T-Shirt" class="w-full h-56 object-contain p-4" />
-          </div>
-          <div class="mt-4">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="font-bold">T-Shirt</h3>
-              <span class="text-sm font-bold text-red-500">$ 4.99</span>
-            </div>
-            <p class="mt-1 text-xs text-black/55">
-              originally designed for rugged work but now a global symbol of casual style.
-            </p>
-
-            <div class="mt-3 flex items-center justify-between">
-              <span class="text-[#F5A623]">★ ★ ★ ★ ☆</span>
-              <button class="w-full ml-3 h-10 rounded-xl bg-primary text-white text-sm font-semibold hover:brightness-95 flex items-center justify-center gap-2">
-                Add to Cart
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-4 w-4">
-                  <path d="M6 6h15l-1.5 9h-12z"/>
-                  <path d="M6 6l-2-2"/>
-                  <path d="M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <article class="bg-white rounded-2xl border border-black/10 p-4">
-          <div class="rounded-xl bg-[#EFEFEF] overflow-hidden">
-            <img src="assets/p6.jpg" alt="Shoes" class="w-full h-56 object-contain p-4" />
-          </div>
-          <div class="mt-4">
-            <div class="flex items-start justify-between gap-3">
-              <h3 class="font-bold">Shoes</h3>
-              <span class="text-sm font-bold text-red-500">$ 33.99</span>
-            </div>
-            <p class="mt-1 text-xs text-black/55">
-              originally designed for rugged work but now a global symbol of casual style.
-            </p>
-
-            <div class="mt-3 flex items-center justify-between">
-              <span class="text-[#F5A623]">★ ★ ★ ★ ★</span>
-              <button class="w-full ml-3 h-10 rounded-xl bg-primary text-white text-sm font-semibold hover:brightness-95 flex items-center justify-center gap-2">
-                Add to Cart
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-4 w-4">
-                  <path d="M6 6h15l-1.5 9h-12z"/>
-                  <path d="M6 6l-2-2"/>
-                  <path d="M9 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 22a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROMO SECTION (Save Your Money) -->
-  <section class="bg-[#D8D4C7] py-12">
-    <div class="mx-auto max-w-6xl px-4">
-      <div class="grid lg:grid-cols-2 gap-10 items-center">
-        <!-- Text -->
-        <div>
-          <h3 class="text-3xl font-extrabold">Save Your Money</h3>
-          <p class="mt-4 text-sm text-black/60 max-w-md">
-            Sometime many people want to wear the Brand items but it's not all the time that they have money.
-            That's why our shop sell items in top grade for all costumers.
-          </p>
-
-          <a href="#" class="mt-6 inline-flex items-center gap-2 h-10 px-5 rounded-xl bg-primary text-white text-sm font-semibold hover:brightness-95">
-            Shop Now
-            <span class="inline-grid place-items-center h-6 w-6 rounded-md bg-white/20">
-              <!-- bag -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-4 w-4">
-                <path d="M6 8h12l-1 13H7L6 8Z"/>
-                <path d="M9 8a3 3 0 1 1 6 0"/>
+          <div class="flex gap-3 md:order-2">
+            <button class="text-gray-500 transition hover:text-primary-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                />
               </svg>
-            </span>
-          </a>
-        </div>
-
-        <!-- Images collage -->
-        <div class="grid grid-cols-3 gap-4">
-          <div class="col-span-2 rounded-2xl bg-white/60 p-2">
-            <img src="assets/promo-main.jpg" alt="promo" class="rounded-xl w-full h-56 md:h-64 object-cover" />
-          </div>
-          <div class="space-y-4">
-            <div class="rounded-2xl bg-white/60 p-2">
-              <img src="assets/promo-1.jpg" alt="promo1" class="rounded-xl w-full h-28 md:h-30 object-cover" />
-            </div>
-            <div class="rounded-2xl bg-white/60 p-2">
-              <img src="assets/promo-2.jpg" alt="promo2" class="rounded-xl w-full h-28 md:h-30 object-cover" />
-            </div>
-          </div>
-
-          <div class="col-span-3 md:col-span-1 md:col-start-3 rounded-2xl bg-white/60 p-2">
-            <img src="assets/promo-3.jpg" alt="promo3" class="rounded-xl w-full h-40 object-cover" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="py-10">
-    <div class="mx-auto max-w-6xl px-4">
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="flex gap-4 items-start">
-          <div class="h-14 w-14 rounded-full bg-primary grid place-items-center text-white">
-            <!-- megaphone -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-6 w-6">
-              <path d="M4 11v2a2 2 0 0 0 2 2h1l4 4v-6"/>
-              <path d="M15 11a4 4 0 0 1 0 2"/>
-              <path d="M18 9a7 7 0 0 1 0 6"/>
-              <path d="M4 12h10l6-4v12l-6-4H4z"/>
-            </svg>
-          </div>
-          <div>
-            <h4 class="font-bold">24/7 Support</h4>
-            <p class="text-sm text-black/60 mt-1">Our shop are open all the time.</p>
-          </div>
-        </div>
-
-        <div class="flex gap-4 items-start">
-          <div class="h-14 w-14 rounded-full bg-primary grid place-items-center text-white">
-            <!-- crown -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-6 w-6">
-              <path d="M4 7l4 6 4-7 4 7 4-6v13H4V7z"/>
-            </svg>
-          </div>
-          <div>
-            <h4 class="font-bold">Why Costumer choose us?</h4>
-            <p class="text-sm text-black/60 mt-1">Our shop has the best quality and good price for costumer.</p>
-          </div>
-        </div>
-
-        <div class="flex gap-4 items-start">
-          <div class="h-14 w-14 rounded-full bg-primary grid place-items-center text-white">
-            <!-- users -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" class="h-6 w-6">
-              <path d="M16 11a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z"/>
-              <path d="M4 20a8 8 0 0 1 16 0"/>
-            </svg>
-          </div>
-          <div>
-            <h4 class="font-bold">Why Costumer like us?</h4>
-            <p class="text-sm text-black/60 mt-1">Because our shop has the best service for costumer.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-[#E6E2D6] border-t border-black/10">
-    <div class="mx-auto max-w-6xl px-4 py-10">
-      <div class="grid md:grid-cols-5 gap-8">
-
-        <div class="md:col-span-2">
-          <div class="flex items-center gap-2">
-            <img src="assets/logo.png" alt="logo" class="h-10 w-10 object-contain">
-            <span class="text-sm tracking-[0.25em] font-semibold">CASSY</span>
-          </div>
-          <p class="mt-4 text-sm text-black/60 max-w-sm">
-            Start your day with the beautiful of clothes and shoes.
-            Now you will get more energy and it’s really important benefits in your life
-            because if you try to make yourself happy do not forget about life style.
-          </p>
-        </div>
-
-        <div>
-          <h5 class="font-bold">Quick link</h5>
-          <ul class="mt-3 space-y-2 text-sm text-black/60">
-            <li><a class="hover:text-black" href="#">Home</a></li>
-            <li><a class="hover:text-black" href="#">Products</a></li>
-            <li><a class="hover:text-black" href="#">About us</a></li>
-            <li><a class="hover:text-black" href="#">Support</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h5 class="font-bold">Products</h5>
-          <ul class="mt-3 space-y-2 text-sm text-black/60">
-            <li><a class="hover:text-black" href="#">T-shirt</a></li>
-            <li><a class="hover:text-black" href="#">Pants</a></li>
-            <li><a class="hover:text-black" href="#">Jackets</a></li>
-            <li><a class="hover:text-black" href="#">Shoes</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h5 class="font-bold">Newsletter</h5>
-          <p class="mt-3 text-sm text-black/60">Subscribe to receive future updates</p>
-
-          <form class="mt-4 flex items-center gap-2 bg-white rounded-full border border-black/10 px-3 py-2">
-            <input
-              type="email"
-              placeholder="Email address"
-              class="w-full bg-transparent outline-none text-sm"
-            />
-            <button class="h-9 px-4 rounded-full bg-primary text-white text-sm font-semibold hover:brightness-95">
-              →
             </button>
-          </form>
+
+            <button
+              class="rounded-xl border border-gray-400 px-6 py-2 text-lg text-black transition hover:border-primary-500 hover:text-primary-500"
+            >
+              Sign in
+            </button>
+
+            <button
+              class="rounded-xl bg-primary-500 px-6 py-2 text-lg text-white transition hover:bg-primary-600"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main-content -->
+    <main class="pt-24 my-100">
+      <h1 class="text-4xl font-bold text-center">Welcome to Cassy Store</h1>
+    </main>
+
+    <!-- footer-content -->
+    <footer class="bg-[#efede3] text-[#8f8a80]">
+      <div class="mx-auto max-w-8xl px-6 pt-16 md:px-12 lg:px-16">
+        <div
+          class="flex flex-col justify-between gap-12 md:flex-row md:gap-24 lg:gap-32"
+        >
+          <div>
+            <img
+              src="./public/assets/img/logo-classic-removebg-preview.png"
+              alt="Cassy Outfit Logo"
+              class="max-w-50"
+            />
+
+            <p class="max-w-md text-lg leading-9 text-[#8f8a80]">
+              Start your day with the beautiful of clothes and shoes. Now you
+              will get more energy and it’s really important benefits in your
+              life because if you try to make yourself happy do not forget about
+              life style.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="mb-5 mt-10 text-xl font-bold text-black">Quick link</h3>
+            <ul class="space-y-4 text-lg">
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Support</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="mb-5 mt-10 text-xl font-bold text-black">Products</h3>
+            <ul class="space-y-4 text-lg">
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >T-shirt</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Pants</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Jackets</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition-colors hover:text-primary-500"
+                  >Shoes</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-10">
+            <div>
+              <h3 class="mb-5 mt-10 text-xl font-bold text-black">Service</h3>
+              <ul class="space-y-4 text-lg">
+                <li>
+                  <a href="#" class="transition-colors hover:text-primary-500"
+                    >Care</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="transition-colors hover:text-primary-500"
+                    >Ship</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="transition-colors hover:text-primary-500"
+                    >Help</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="transition-colors hover:text-primary-500"
+                    >Save</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="mb-5 mt-10 text-xl font-bold text-black">Newsletter</h3>
+            <p class="mb-5 max-w-55 text-lg leading-8">
+              Subscribe to receive future updates
+            </p>
+
+            <form class="relative max-w-65">
+              <input
+                type="email"
+                placeholder="Email address"
+                class="h-12 w-full rounded-full border border-[#cfc4a8] bg-transparent pl-5 pr-14 text-[16px] outline-none placeholder:text-[#a5a199] focus:border-primary-500"
+              />
+              <button
+                type="submit"
+                class="absolute top-1/2 right-4 -translate-y-1/2 text-[#9a978f] transition-colors hover:text-primary-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 fill-current"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2a10 10 0 100 20 10 10 0 000-20zm-1.29 13.29a1 1 0 001.41 1.42l3-3a1 1 0 000-1.42l-3-3a1 1 0 10-1.41 1.42L12.59 11H8a1 1 0 100 2h4.59l-1.88 1.29z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
 
-      </div>
+        <div
+          class="mt-12 flex flex-col items-center justify-between gap-6 border-t border-[#cfc4a8] pt-8 md:flex-row"
+        >
+          <p class="text-center text-[18px] text-[#aa9e7c] md:text-left">
+            © 2026 Base. All rights reserved. Distributed by Cassy Store.
+          </p>
 
-      <div class="mt-10 border-t border-black/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p class="text-xs text-black/50">© 2026 Base. All rights reserved. Distributed by Cassy Store.</p>
+          <div class="flex items-center mb-10 gap-5 text-[#b3a57f]">
+            <a href="#" class="transition-colors hover:text-primary-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0022 12z"
+                />
+              </svg>
+            </a>
 
-        <div class="flex items-center gap-3 text-black/60">
-          <a class="h-9 w-9 rounded-full bg-white/70 grid place-items-center hover:bg-white" href="#" aria-label="facebook">
-            f
-          </a>
-          <a class="h-9 w-9 rounded-full bg-white/70 grid place-items-center hover:bg-white" href="#" aria-label="twitter">
-            t
-          </a>
-          <a class="h-9 w-9 rounded-full bg-white/70 grid place-items-center hover:bg-white" href="#" aria-label="telegram">
-            ✈
-          </a>
+            <a href="#" class="transition-colors hover:text-primary-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.15 2 11.27c0 2.92 1.46 5.52 3.74 7.22V22l3.19-1.75c.98.27 2 .42 3.07.42 5.52 0 10-4.15 10-9.27S17.52 2 12 2zm1.03 12.44-2.54-2.71-4.95 2.71 5.45-5.78 2.58 2.71 4.9-2.71-5.44 5.78z"
+                />
+              </svg>
+            </a>
+
+            <a href="#" class="transition-colors hover:text-primary-500">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21.94 4.66a1.5 1.5 0 00-1.63-.24L3.4 11.35a1.5 1.5 0 00.08 2.8l4.2 1.54 1.54 4.2a1.5 1.5 0 002.8.08l6.93-16.9a1.5 1.5 0 00-.01-1.41zM9.5 15.2l-.9 2.45-.9-2.45 6.98-6.98-5.18 7z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
