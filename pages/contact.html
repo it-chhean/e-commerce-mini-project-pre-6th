@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Cassy Store | Contact</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="../dist/output.css">
-</head>
-
-<body>
+  <body class="bg-[#F7F6F2] text-[#1A1A1A] font-sans min-h-screen">
+    <!-- Header -->
     <header>
-         <!-- navbar -->
       <nav class="bg-white fixed top-0 z-20 w-full border-b border-gray-200">
         <div
           class="mx-10 flex max-w-8xl flex-wrap items-center justify-between p-4"
@@ -18,27 +17,55 @@
           <a href="#" class="flex items-center space-x-3">
             <img
               class="h-20 w-20 object-contain"
-              src="../img/logo-classic-removebg-preview.png"
+              src="./public/assets/img/logo-classic-removebg-preview.png"
               alt="Logo"
             />
           </a>
- <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
-        <li>
-          <a href="#" class="text-xl text-black font-light hover:text-[#a1957c] transition-colors text-shadow-lg/30">Home</a>
-        </li>
-        <li>
-          <a href="#" class="text-xl text-black font-light hover:text-[#a1957c] transition-colors text-shadow-lg/30">Products</a>
-        </li>
-        <li>
-          <a href="#" class="text-xl text-black font-light hover:text-[#a1957c] transition-colors text-shadow-lg/30">About us</a>
-        </li>
-        <li>
-          <a href="./src/contact.html" class="text-xl text-black font-light hover:text-[#a1957c] transition-colors text-shadow-lg/30">Contact</a>
-        </li>
-      </ul>
-    </div>
 
+          <div class="hidden md:order-1 md:flex">
+            <ul class="flex space-x-20 font-medium">
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Products
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  About us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-xl font-light text-black transition hover:text-primary-500"
+                >
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
 
           <div class="flex gap-3 md:order-2">
             <button class="text-gray-500 transition hover:text-primary-500">
@@ -59,13 +86,13 @@
             </button>
 
             <button
-              class="rounded-xl border border-gray-400 px-6 py-2 text-lg text-black transition hover:border-primary-500 hover:text-primary-500 font-thin"
+              class="rounded-xl border border-gray-400 px-6 py-2 text-lg text-black transition hover:border-primary-500 hover:text-primary-500"
             >
               Sign in
             </button>
 
             <button
-              class="rounded-xl bg-primary-500 px-6 py-2 text-lg text-white transition hover:bg-primary-600 font-thin"
+              class="rounded-xl bg-primary-500 px-6 py-2 text-lg text-white transition hover:bg-primary-600"
             >
               Sign up
             </button>
@@ -73,85 +100,13 @@
         </div>
       </nav>
     </header>
-    <main class="pt-32 lg:pt-40 ">
-        <section class="lg:flex lg:gap-5 py-10 lg:px-20 md:px-10 px-5 bg-gray-200">
-            <div class="lg:w-1/2 lg:pb-0 pb-10">
-                <h2 class="text-7xl font-medium  mb-5">
-                    Contact Us
-                </h2>
-                <p class='pb-5 lg:pr-20 whitespace-pre-line'>
-                    Email, call, or complete the form to learn how.                       
-                    Our shop can solve your messaging problem.                          
-                    Cassy@gmail.com
-                    </p>
-                <div class="space-y-4">
 
-                    <div>
-                        <h4 class="text-lg font-normal">321-221-231</h4>
-                    </div>
-                    <div>
-                        <h4 class="text-lg underline font-medium text-base/8">Customer Support</h4>
-                        <!-- <p class="flex items-center gap-2  hover:underline">
-                            <MdOutlineEmail class='text-blue-500' />: example@gmail.com
-                        </p> -->
-                    </div>
-                    <div class="flex text-1xl">
-                    <div>
-                        <h4 class="text-lg font-medium underline text-base/8 ">Customer Support</h4>
-                        <p  class="whitespace-pre-line text-gray-500">Our support team is available around the clock to address any concern or queries you may have</p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-medium underline text-base/8">Feedback and Suggestion</h4>
-                        <p  class=" text-gray-500">We value your feedback and are continuously working to improve Cassy. Your input is crucial in shopping the future of Cassy.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-medium underline text-base/8">Media Inquiries</h4>
-                        <p  class="whitespace-pre-line text-gray-500">For media-related question or press inquires, please contact us at media@cassyapp.com
-                        </p>
-                    </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <section class="">
-            <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-                <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl font-extrabold text-gray-900">Visit Our Location</h2>
-                </div>
-                <div class="mt-16 lg:mt-20">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div>
-                            <div class="max-w-full mx-auto rounded-lg overflow-hidden">
-                                <div class="  px-6 py-4">
-                                    <h3 class="text-5xl text-gray-900">Connect Near and Far</h3>
-                                </div>
-                                <div class=" px-6 py-4">
-                                    <h3 class="text-2xl font-medium text-gray-900">Headquarters</h3>
-                                    <div class=" text-base/8 ">
-                                    <p class="mt-1 text-gray-600">Cassy inc</p>
-                                    <p class="font-serif mt-1 text-gray-600 whitespace-pre-line text-base/6">Phnom Penh , Cambodia               
-                                        Nr3 khan Dangkor, Phnom Penh, Phum Prey Kei, B,                                    
-                                     Phnom Penh 12000.
-                                    </p>
-                                    </div>
-                              
-                                </div>
-                            </div>
-                        </div>
-                            <div class="rounded-lg overflow-hidden">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.5335955297364!2d104.89882747522374!3d11.585255988617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951e96d257a6f%3A0x6b66703c5fc0c7cc!2sScience%20and%20Technology%20Advanced%20Development%20Co.%2C%20Ltd.!5e0!3m2!1sen!2sus!4v1772683189121!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        </div>
-
+    <!-- main-content -->
+    <main class="pt-24 my-100">
+      <h1 class="text-4xl font-bold text-center">Welcome to Cassy Store</h1>
     </main>
-        <!-- footer-content -->
+
+    <!-- footer-content -->
     <footer class="bg-[#efede3] text-[#8f8a80]">
       <div class="mx-auto max-w-8xl px-6 pt-16 md:px-12 lg:px-16">
         <div
@@ -159,7 +114,7 @@
         >
           <div>
             <img
-              src="../img/logo-classic-removebg-preview.png"
+              src="./public/assets/img/logo-classic-removebg-preview.png"
               alt="Cassy Outfit Logo"
               class="max-w-50"
             />
@@ -329,6 +284,5 @@
         </div>
       </div>
     </footer>
-</body>
-
+  </body>
 </html>

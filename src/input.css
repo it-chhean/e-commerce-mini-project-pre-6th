@@ -1,5 +1,21 @@
 @import "flowbite/src/themes/default";
-@import "tailwindcss";
 
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+  --font-primary: "Roboto", sans-serif;
+  --color-primary-50: #f8f6f2;
+  --color-primary-100: #efe9df;
+  --color-primary-200: #dfd5c2;
+  --color-primary-300: #cfc1a6;
+  --color-primary-400: #c0ae89;
+  --color-primary-500: #b2a68d;
+  --color-primary-600: #a1957c;
+  --color-primary-700: #867b65;
+  --color-primary-800: #6b6250;
+  --color-primary-900: #514a3c;
+}
+
