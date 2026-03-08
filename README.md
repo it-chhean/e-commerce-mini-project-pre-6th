@@ -1,1 +1,1 @@
-# e-commerce-mini-project-pre-6th
+To all dear panda :0
