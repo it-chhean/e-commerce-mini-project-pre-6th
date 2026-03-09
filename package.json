@@ -1,9 +1,27 @@
 {
   "dependencies": {
-    "@tailwindcss/cli": "^4.2.1",
-    "tailwindcss": "^4.2.1"
+    "@tailwindcss/cli": "^4.2.1"
   },
   "scripts": {
-    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "start": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "name": "e-commerce-mini-project-pre-6th",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/it-chhean/e-commerce-mini-project-pre-6th.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/it-chhean/e-commerce-mini-project-pre-6th/issues"
+  },
+  "homepage": "https://github.com/it-chhean/e-commerce-mini-project-pre-6th#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.2.1"
   }
 }
